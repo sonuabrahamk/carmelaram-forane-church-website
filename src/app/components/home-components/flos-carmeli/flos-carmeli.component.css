@@ -1,0 +1,22 @@
+.pdf-preview{
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60%;
+    display: none;
+    text-align: center;
+    color: #fff;
+}
+
+.pdf-preview:hover .overlay{
+    display: block;
+    transition: all ease-in-out 5s;
+}
