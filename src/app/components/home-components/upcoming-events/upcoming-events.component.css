@@ -1,0 +1,34 @@
+.events .row{
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.date {
+    background-color: #ebba16;
+    max-width: 70px;
+    max-height: 70px
+}
+
+.date .dd {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.date .mon {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary {
+    color: #ebba16;
+    border-color: #ebba16;
+}
+
+.btn-outline-primary:hover{
+    background-color: #ebba16;
+    color: #fff;
+}
