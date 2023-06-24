@@ -1,10 +1,26 @@
 .scroller {
     width: 100%;
-    padding-top: 7px;
-    padding-bottom: 5px;
     background-color: #eb661f;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
     margin: 5px 0;
+    display: flex;
+}
+
+.scroller a {
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.scroller a:hover{
+    color: goldenrod;
+}
+
+.scroller marquee {
+    padding-top: 10px;
 }

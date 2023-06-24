@@ -11,6 +11,7 @@ import { ScrollerComponent } from './components/scroller/scroller.component';
 import { CarouselComponent } from './components/home-components/carousel/carousel.component';
 import { UpcomingEventsComponent } from './components/home-components/upcoming-events/upcoming-events.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FlosCarmeliComponent } from './components/home-components/flos-carmeli/flos-carmeli.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CarouselComponent,
     UpcomingEventsComponent,
     FooterComponent,
+    FlosCarmeliComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, NgbDropdownModule],
   providers: [],
