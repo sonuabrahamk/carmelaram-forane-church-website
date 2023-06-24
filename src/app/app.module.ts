@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { CarouselComponent } from './components/home-components/carousel/carouse
 import { UpcomingEventsComponent } from './components/home-components/upcoming-events/upcoming-events.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FlosCarmeliComponent } from './components/home-components/flos-carmeli/flos-carmeli.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,14 @@ import { FlosCarmeliComponent } from './components/home-components/flos-carmeli/
     FooterComponent,
     FlosCarmeliComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, NgbDropdownModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    NgbDropdownModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
