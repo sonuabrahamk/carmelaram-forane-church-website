@@ -22,13 +22,3 @@
     text-align: center;
     text-transform: uppercase;
 }
-
-.btn-outline-primary {
-    color: #ebba16;
-    border-color: #ebba16;
-}
-
-.btn-outline-primary:hover{
-    background-color: #ebba16;
-    color: #fff;
-}

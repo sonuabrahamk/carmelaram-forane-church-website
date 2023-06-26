@@ -14,6 +14,16 @@ import { UpcomingEventsComponent } from './components/home-components/upcoming-e
 import { FooterComponent } from './components/footer/footer.component';
 import { FlosCarmeliComponent } from './components/home-components/flos-carmeli/flos-carmeli.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ParishComponent } from './pages/parish/parish.component';
+import { DioceseComponent } from './pages/diocese/diocese.component';
+import { CarmelMercyHomeComponent } from './pages/carmel-mercy-home/carmel-mercy-home.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ProfileCardsComponent } from './components/parish-components/profile-cards/profile-cards.component';
+import { AnnouncementsComponent } from './pages/announcements/announcements.component';
+import { EventsComponent } from './pages/events/events.component';
+import { EnquiryComponent } from './components/home-components/enquiry/enquiry.component';
+import { HomeGalleryComponent } from './components/home-components/home-gallery/home-gallery.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +36,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     UpcomingEventsComponent,
     FooterComponent,
     FlosCarmeliComponent,
+    ParishComponent,
+    DioceseComponent,
+    CarmelMercyHomeComponent,
+    GalleryComponent,
+    ProfileCardsComponent,
+    AnnouncementsComponent,
+    EventsComponent,
+    EnquiryComponent,
+    HomeGalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +53,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     NgbDropdownModule,
     CarouselModule,
     BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
