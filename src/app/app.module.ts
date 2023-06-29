@@ -24,6 +24,8 @@ import { EventsComponent } from './pages/events/events.component';
 import { EnquiryComponent } from './components/home-components/enquiry/enquiry.component';
 import { HomeGalleryComponent } from './components/home-components/home-gallery/home-gallery.component';
 import { FormsModule } from '@angular/forms';
+import { AgGridModule } from 'ag-grid-angular';
+import { AnnouncementContentComponent } from './components/announcement-page/announcement-content/announcement-content.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { FormsModule } from '@angular/forms';
     EventsComponent,
     EnquiryComponent,
     HomeGalleryComponent,
+    AnnouncementContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { FormsModule } from '@angular/forms';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
+    AgGridModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

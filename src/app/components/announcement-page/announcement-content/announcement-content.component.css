@@ -1,0 +1,21 @@
+.accordion {
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-active-bg: #ebba16;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-padding-x: 1rem;
+    --bs-accordion-btn-padding-y: 5px;
+    --bs-accordion-body-padding-x: 1rem;
+    --bs-accordion-body-padding-y: 5px;
+
+    margin: 10px 0;
+}
+
+.accordion-button {
+    font-weight: 500!important;
+}
+
+.accordion-button:hover {
+    background-color: #ebba16;
+}
