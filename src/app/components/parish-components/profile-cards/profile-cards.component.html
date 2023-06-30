@@ -1,11 +1,13 @@
 <div class="card">
-  <img
-    class="card-img-top"
-    src="../../../../assets/img/profile.jpg"
-    alt="Title"
-  />
+  <div class="card-header">
+    <img
+      class="card-img-top"
+      src="../../../../assets/img/{{ this.profileImgUrl }}"
+      alt="Title"
+    />
+  </div>
   <div class="card-body">
-    <h4 class="card-title">Title</h4>
-    <p class="card-text">Text</p>
+    <h4 class="card-title">{{ this.profileName }}</h4>
+    <p class="card-text">{{ this.profileTitle }}</p>
   </div>
 </div>

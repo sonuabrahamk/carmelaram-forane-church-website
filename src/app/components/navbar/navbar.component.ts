@@ -10,13 +10,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @ViewChild('body') private contentBody: ElementRef | any;
-
   isNavbarCollapsed: boolean = true;
 
   contactClick(): void {
-    alert('clicked');
-    this.contentBody.nativeElement.scrollTop =
-      this.contentBody.nativeElement.scrollHeight;
+    document
+      .getElementById('footer')
+      ?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
 }

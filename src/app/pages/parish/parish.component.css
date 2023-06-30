@@ -1,4 +1,41 @@
 .row {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    clear: both;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.main-img {
+    width: 40%;
+    float: left;
+    margin-right: 15px;
+}
+
+.contentSection{
+   text-align: justify;
+   margin-top: 10px;
+}
+
+.readBtn{
+    color: #ebba16;
+    border: 1px solid #ebba16;
+    float: right;
+    clear: both;
+    margin: 10px 0;
+}
+
+.readBtn:hover {
+    color: #fff;
+    background-color: #ebba16;
+}
+
+.contentSection{
+    height: 200px;
+    overflow: hidden;
+}
+
+.readMore {
+    height: auto!important;
+    overflow: inherit;
 }
