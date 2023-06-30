@@ -48,3 +48,19 @@ p {
     font-size: 12px;
     text-align: justify;
 }
+
+.owl-theme .owl-nav {
+    float: right !important;
+    border-top: 1px solid #ccc;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: #fff;
+    border: 1px solid #ebba16;
+    color: #ebba16;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #ebba16;
+    color: #fff;
+}

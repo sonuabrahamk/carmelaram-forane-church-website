@@ -2,9 +2,9 @@
 <div class="row">
   <form #contactForm="ngForm" (ngSubmit)="submitForm()">
     <div class="input-group">
-      <span class="input-group-text" id="basic-addon1"
-        ><span class="material-symbols-outlined">person</span></span
-      >
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-person"></i>
+      </span>
       <input
         type="text"
         class="form-control"
@@ -16,9 +16,9 @@
       />
     </div>
     <div class="input-group">
-      <span class="input-group-text" id="basic-addon1"
-        ><span class="material-symbols-outlined">mail</span></span
-      >
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </span>
       <input
         type="email"
         class="form-control"
@@ -31,9 +31,9 @@
       />
     </div>
     <div class="input-group">
-      <span class="input-group-text" id="basic-addon1"
-        ><span class="material-symbols-outlined">phone_iphone</span></span
-      >
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-phone"></i>
+      </span>
       <input
         type="tel"
         class="form-control"
@@ -46,9 +46,27 @@
       />
     </div>
     <div class="input-group">
-      <span class="input-group-text"
-        ><span class="material-symbols-outlined">chat</span></span
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-sharp fa-solid fa-quote-right"></i>
+      </span>
+      <select
+        class="form-control"
+        placeholder="Category"
+        aria-label="Category"
+        aria-describedby="basic-addon1"
+        name="category"
+        required
       >
+        <option>Office</option>
+        <option>Catechism</option>
+        <option>Carmel Mercy Home</option>
+        <option>Parish Hall</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-message"></i>
+      </span>
       <textarea
         class="form-control"
         aria-label="With textarea"
@@ -58,14 +76,14 @@
       ></textarea>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-lg-3 offset-lg-6">
         <div class="input-group">
           <button class="btn btn-outline-secondary" type="button">
             Cancel
           </button>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3">
         <div class="input-group">
           <button
             type="submit"
