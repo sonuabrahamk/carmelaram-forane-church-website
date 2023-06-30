@@ -28,21 +28,53 @@
       class="collapse navbar-collapse"
       id="collapsibleNavId"
     >
-      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page">Home</a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="'active'"
+            [routerLink]="['home']"
+            aria-current="page"
+          >
+            Home
+          </a>
+          <i class="fa-solid fa-minus"></i>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="diocese">Diocese</a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="['diocese']"
+          >
+            Diocese
+          </a>
+          <i class="fa-solid fa-minus"></i>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="parish">Parish</a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="['parish']"
+            >Parish</a
+          >
+          <i class="fa-solid fa-minus"></i>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="carmel-mercy-home">Carmel Mercy Home</a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="['carmel-mercy-home']"
+            >Carmel Mercy Home</a
+          >
+          <i class="fa-solid fa-minus"></i>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery">Gallery</a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="['gallery']"
+            >Gallery</a
+          >
         </li>
         <!-- <li class="nav-item dropdown" ngbDropdown>
           <a
@@ -63,6 +95,17 @@
             <a class="dropdown-item" ngbDropdownItem href="#">Action 2</a>
           </div>
         </li> -->
+      </ul>
+      <ul class="navbar-nav float-end">
+        <li>
+          <a
+            class="nav-link"
+            style="cursor: pointer; font-size: 16px"
+            (click)="contactClick()"
+          >
+            <i class="fa-solid fa-id-card-clip"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>

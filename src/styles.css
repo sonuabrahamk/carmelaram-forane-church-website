@@ -37,6 +37,12 @@ h3 {
     border-bottom: 1px solid #eb661f;
 }
 
+h3 i{
+    color: #ebba16;
+    margin-right: 10px;
+    /* -webkit-text-stroke: 1px #000; */
+}
+
 h3 button {
     float: right;
     font-size: 12px !important;
