@@ -1,34 +1,22 @@
 <h3>
   Upcoming Events
-  <button type="button" class="btn btn-outline-primary">View All</button>
+  <a href="upcoming-events">
+    <button type="button" class="btn btn-outline-primary">View All</button>
+  </a>
 </h3>
-<div class="events">
+<div class="events" *ngFor="let event of eventsData">
   <div class="row">
-    <div class="col-sm-3 date">
-      <div class="dd">23</div>
-      <div class="mon">Nov</div>
+    <div class="col-sm-3">
+      <app-date-element [data]="event.date"></app-date-element>
     </div>
     <div class="col-sm-9">
-      <h5>Kalotsavam - 2023</h5>
+      <h5>{{ event.title }}</h5>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        {{ event.content }}
       </p>
-      <button type="button" class="btn btn-outline-primary">Read More</button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3 date">
-      <div class="dd">25</div>
-      <div class="mon">DEC</div>
-    </div>
-    <div class="col-sm-9">
-      <h5>Christmas</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <button type="button" class="btn btn-outline-primary">Read More</button>
+      <button type="button" class="btn btn-outline-primary read-more">
+        Read More
+      </button>
     </div>
   </div>
 </div>

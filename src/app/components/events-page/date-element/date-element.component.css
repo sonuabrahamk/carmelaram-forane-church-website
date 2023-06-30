@@ -1,0 +1,20 @@
+.date {
+    background-color: #ebba16;
+    max-width: 70px;
+    max-height: 70px
+}
+
+.date .dd {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.date .mon {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 16px;
+}

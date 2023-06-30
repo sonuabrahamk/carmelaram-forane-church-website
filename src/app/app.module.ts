@@ -26,6 +26,8 @@ import { HomeGalleryComponent } from './components/home-components/home-gallery/
 import { FormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
 import { AnnouncementContentComponent } from './components/announcement-page/announcement-content/announcement-content.component';
+import { DateElementComponent } from './components/events-page/date-element/date-element.component';
+import { EventContentComponent } from './components/events-page/event-content/event-content.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { AnnouncementContentComponent } from './components/announcement-page/ann
     EnquiryComponent,
     HomeGalleryComponent,
     AnnouncementContentComponent,
+    DateElementComponent,
+    EventContentComponent,
   ],
   imports: [
     BrowserModule,
