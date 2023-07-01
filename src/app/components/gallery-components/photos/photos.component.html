@@ -1,0 +1,40 @@
+<div class="container">
+  <h3>
+    <i class="fa-solid fa-ribbon"></i>
+    Gallery
+  </h3>
+  <h4>Perunaal Photos</h4>
+  <div class="row">
+    <div class="col-lg-2" *ngFor="let data of this.imagesData; let i = index">
+      <div class="card" (click)="galleryView(i)">
+        <img
+          class="card-img-top img-fluid"
+          src="../../../../assets/img/gallery/{{ this.associationID }}/{{
+            this.albumId
+          }}/{{ data }}"
+          alt="image cap"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay-view" id="overlayView">
+  <div class="overlay-header">
+    <i
+      class="fa-solid fa-xmark"
+      style="cursor: pointer"
+      (click)="cancelBtn()"
+    ></i>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let data of this.imagesData" [id]="data">
+      <img
+        src="../../../../assets/img/gallery/{{ this.associationID }}/{{
+          this.albumId
+        }}/{{ data }}"
+        alt="BG Image"
+        class="img-fluid galleryImg"
+      />
+    </ng-template>
+  </owl-carousel-o>
+</div>

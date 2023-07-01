@@ -28,6 +28,8 @@ import { AgGridModule } from 'ag-grid-angular';
 import { AnnouncementContentComponent } from './components/announcement-page/announcement-content/announcement-content.component';
 import { DateElementComponent } from './components/events-page/date-element/date-element.component';
 import { EventContentComponent } from './components/events-page/event-content/event-content.component';
+import { AssociationComponent } from './components/gallery-components/association/association.component';
+import { PhotosComponent } from './components/gallery-components/photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { EventContentComponent } from './components/events-page/event-content/ev
     AnnouncementContentComponent,
     DateElementComponent,
     EventContentComponent,
+    AssociationComponent,
+    PhotosComponent,
   ],
   imports: [
     BrowserModule,

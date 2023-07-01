@@ -1,0 +1,66 @@
+.container {
+    min-height: 50vh;
+}
+
+h3 {
+    border: none;
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    transition: all ease-in-out .3s;
+}
+
+.card:hover {
+    background-color: #e7e7e7;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: none;
+    transition: all ease-in-out .3s;
+}
+
+.overlay-header {
+    height: 60px;
+    text-align: end;
+    padding: 10px 30px;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.overlay-view {
+    display: block;
+}
+
+.galleryImg{
+    max-height: 85vh;
+}

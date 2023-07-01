@@ -8,16 +8,24 @@ import { CarmelMercyHomeComponent } from './pages/carmel-mercy-home/carmel-mercy
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AnnouncementsComponent } from './pages/announcements/announcements.component';
 import { EventsComponent } from './pages/events/events.component';
+import { AssociationComponent } from './components/gallery-components/association/association.component';
+import { PhotosComponent } from './components/gallery-components/photos/photos.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
   { path: 'home', component: HomeComponent },
   { path: 'diocese', component: DioceseComponent },
   { path: 'parish', component: ParishComponent },
   { path: 'carmel-mercy-home', component: CarmelMercyHomeComponent },
-  { path: 'gallery', component: GalleryComponent },
   { path: 'announcements', component: AnnouncementsComponent },
   { path: 'upcoming-events', component: EventsComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'gallery/:association', component: AssociationComponent },
+  { path: 'gallery/:association/:album', component: PhotosComponent },
 ];
 
 @NgModule({

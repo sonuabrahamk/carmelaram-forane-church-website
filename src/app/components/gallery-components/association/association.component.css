@@ -12,7 +12,7 @@ h4 {
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 
@@ -24,7 +24,7 @@ a {
     cursor: pointer;
 }
 
-.card-img-top{
+.card-img-top {
     padding: 20px;
     height: 150px;
     width: 150px;
