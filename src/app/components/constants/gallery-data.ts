@@ -13,4 +13,16 @@ export const galleryData: IGallery[] = [
       },
     ],
   },
+  {
+    associationName: 'youth',
+    logo: 'logo.png',
+    albums: [
+      {
+        name: 'hallelujah',
+        date: new Date('2022-01-28'),
+        thumbnailUrl: 'logo.png',
+        images: ['img1.jpg', 'img2.jpg', 'img3.jpg'],
+      },
+    ],
+  },
 ];

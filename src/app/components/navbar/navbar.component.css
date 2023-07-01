@@ -35,8 +35,8 @@
 
 .navbar-nav .nav-item i {
     float: right;
-    font-size: 1.5rem;
-    padding: 6px 10px;
+    font-size: 6px;
+    padding: 6px 30px;
     color: #ebba16;
     transform: rotate(90deg);
 } 
