@@ -19,3 +19,23 @@
     border: 1px solid #eb661f;
 
 }
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn{
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active{
+    background-color: #eb661f;
+}
+
+input.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid {
+    border: 2px solid red;
+}

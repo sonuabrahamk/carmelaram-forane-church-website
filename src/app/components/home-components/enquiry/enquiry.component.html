@@ -12,6 +12,8 @@
         aria-label="First Name"
         aria-describedby="basic-addon1"
         name="firstName"
+        [(ngModel)]="firstName"
+        #firstNameInput="ngModel"
         required
       />
     </div>
@@ -26,6 +28,8 @@
         aria-label="Email ID"
         aria-describedby="basic-addon1"
         name="emailId"
+        [(ngModel)]="emailId"
+        #emailIdInput="ngModel"
         required
         email
       />
@@ -41,6 +45,8 @@
         aria-label="Contact no"
         aria-describedby="basic-addon1"
         name="contactNo"
+        [(ngModel)]="contactNo"
+        #contactNoInput="ngModel"
         required
         [valueAsNumber]
       />
@@ -55,8 +61,11 @@
         aria-label="Category"
         aria-describedby="basic-addon1"
         name="category"
+        [(ngModel)]="category"
+        #categoryInput="ngModel"
         required
       >
+        <option [ngValue]="null" [disabled]="true">Select Category</option>
         <option>Office</option>
         <option>Catechism</option>
         <option>Carmel Mercy Home</option>
@@ -72,6 +81,8 @@
         aria-label="With textarea"
         placeholder="Your comment here"
         name="comment"
+        [(ngModel)]="comment"
+        #commentInput="ngModel"
         required
       ></textarea>
     </div>

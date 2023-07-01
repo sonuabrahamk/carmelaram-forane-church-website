@@ -6,11 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enquiry.component.css'],
 })
 export class EnquiryComponent implements OnInit {
+  firstName: string | undefined;
+  emailId: string | undefined;
+  contactNo: number | undefined;
+  category: string | null = null;
+  comment: string | undefined;
+
   constructor() {}
 
   ngOnInit(): void {}
 
   submitForm(): void {
-    alert();
+    const payload = {
+      firstName: this.firstName,
+      emailId: this.emailId,
+      contactNo: this.contactNo,
+      category: this.category,
+      message: this.comment,
+    };
+    alert(JSON.stringify(payload));
   }
 }
