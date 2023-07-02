@@ -30,3 +30,12 @@
     border: 1px solid #fff;
     background-color: #eb661f;
 }
+
+a{
+    text-decoration: none!important;
+    color: #000
+}
+
+a:hover {
+    color: #eb661f;
+}

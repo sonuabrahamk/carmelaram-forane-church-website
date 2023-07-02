@@ -20,11 +20,6 @@
     background-color: #ebba16;
 }
 
-.contentSection {
-    height: 200px;
-    overflow: hidden;
-}
-
 .readMore {
     height: auto !important;
     overflow: inherit;
@@ -35,4 +30,11 @@ ul {
     font-size: 12px;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+.text-img{
+    float: left;
+    width: 20%;
+    margin: 10px;
 }
