@@ -24,7 +24,6 @@
     "ag-grid-angular": "^30.0.2",
     "ag-grid-community": "^30.0.2",
     "bootstrap": "^5.2.0",
-    "font-awesome": "^4.7.0",
     "ngx-owl-carousel-o": "^14.0.1",
     "rxjs": "~7.5.0",
     "zone.js": "~0.11.4"
