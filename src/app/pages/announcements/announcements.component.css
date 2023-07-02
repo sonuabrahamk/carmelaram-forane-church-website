@@ -25,11 +25,11 @@
 
 .ag-theme-alpine {
     --ag-header-height: 30px;
-    --ag-header-foreground-color: none;
+    /* --ag-header-foreground-color: none;
     --ag-header-background-color: none;
     --ag-borders: none;
     --ag-row-border-style: none;
     --ag-row-hover-color: none;
     --ag-odd-row-background-color: none;
-    --ag-alpine-active-color: #fff;
+    --ag-alpine-active-color: #fff; */
 }

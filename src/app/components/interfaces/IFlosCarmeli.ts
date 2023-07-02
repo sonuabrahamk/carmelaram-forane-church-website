@@ -1,7 +1,9 @@
 export interface IFlosCarmeli {
   id: number;
   image: string;
-  title: string;
+  volume: number;
+  issue: number;
   date: Date;
-  content: string;
+  file: string;
+  name: string;
 }

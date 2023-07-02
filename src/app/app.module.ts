@@ -30,6 +30,7 @@ import { DateElementComponent } from './components/events-page/date-element/date
 import { EventContentComponent } from './components/events-page/event-content/event-content.component';
 import { AssociationComponent } from './components/gallery-components/association/association.component';
 import { PhotosComponent } from './components/gallery-components/photos/photos.component';
+import { FlosCarmeliActionsComponent } from './components/flos-carmeli-actions/flos-carmeli-actions.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { PhotosComponent } from './components/gallery-components/photos/photos.c
     EventContentComponent,
     AssociationComponent,
     PhotosComponent,
+    FlosCarmeliActionsComponent,
   ],
   imports: [
     BrowserModule,

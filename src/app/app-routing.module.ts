@@ -10,6 +10,7 @@ import { AnnouncementsComponent } from './pages/announcements/announcements.comp
 import { EventsComponent } from './pages/events/events.component';
 import { AssociationComponent } from './components/gallery-components/association/association.component';
 import { PhotosComponent } from './components/gallery-components/photos/photos.component';
+import { FlosCarmeliComponent } from './pages/flos-carmeli/flos-carmeli.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'diocese', component: DioceseComponent },
   { path: 'parish', component: ParishComponent },
   { path: 'carmel-mercy-home', component: CarmelMercyHomeComponent },
-  { path: 'announcements', component: AnnouncementsComponent },
+  { path: 'flos-carmeli', component: AnnouncementsComponent },
+  { path: 'announcements', component: FlosCarmeliComponent },
   { path: 'upcoming-events', component: EventsComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'gallery/:association', component: AssociationComponent },

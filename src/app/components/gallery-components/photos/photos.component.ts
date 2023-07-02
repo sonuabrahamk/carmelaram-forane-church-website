@@ -24,16 +24,15 @@ export class PhotosComponent implements OnInit {
   ngOnInit(): void {
     this.associationID = this.route.snapshot.paramMap.get('association');
     this.albumId = this.route.snapshot.paramMap.get('album');
+
     for (let data of this.galleryData) {
       if (data.associationName === this.associationID) {
         for (let album of data.albums) {
-          if (album.name === this.albumId) {
+          if (album.name == this.albumId) {
             this.imagesData = album.images;
           }
-          break;
         }
       }
-      break;
     }
   }
 

@@ -1,0 +1,18 @@
+.events-container {
+    font-family: 'Poppins', sans-serif;
+    min-height: 50vh;
+}
+
+.events-container h3 {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.events-container ul {
+    font-weight: 400;
+    font-size: 15px;
+}
+.events-container ul li{
+    margin: 20px 0;
+}

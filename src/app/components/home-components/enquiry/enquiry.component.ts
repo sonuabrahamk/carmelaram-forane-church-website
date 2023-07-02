@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enquiry.component.css'],
 })
 export class EnquiryComponent implements OnInit {
-  firstName: string | undefined;
-  emailId: string | undefined;
-  contactNo: number | undefined;
+  firstName: string | any;
+  emailId: string | any;
+  contactNo: number | any;
   category: string | null = null;
-  comment: string | undefined;
+  comment: string | any;
 
   constructor() {}
 
@@ -24,6 +24,7 @@ export class EnquiryComponent implements OnInit {
       category: this.category,
       message: this.comment,
     };
-    alert(JSON.stringify(payload));
+    alert('Thankyou! We will get back to you soon!');
+    window.location.reload();
   }
 }
