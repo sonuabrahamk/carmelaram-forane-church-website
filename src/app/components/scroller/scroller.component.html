@@ -1,14 +1,8 @@
 <div class="scroller">
-  <a href="announcements">Announcements</a>
+  <a [routerLink]="['/announcements']">Announcements</a>
   <marquee>
-    <i class="fa-solid fa-bullhorn"></i> Congratulations to the Newly Elected
-    Trustees Santhosh Joseph Vazhayil, Reji Mathew Koozhampala, Raju Thomas
-    Anthiyamkulam & Sijo John Plathottam who will take charge on 02-July-2023
-    <i class="fa-solid fa-bullhorn"></i> Feast of St. Thomas – Dukhrana will be
-    commemorated on 03-July, Holy Mass will be held at 6:00am and 6:00pm. Holy
-    Mass at Carmel Mercy Home will be held at 7pm.
-    <i class="fa-solid fa-bullhorn"></i> Our Forane Vicar – Rev Fr. Mark
-    Nediyakalayi OCD has been appointed as the Director of Pithruvedi, Diocese
-    of Mandya and will assume charge on 03-July
+    <span *ngFor="let data of this.announcements">
+      <i class="fa-solid fa-bullhorn"></i> {{ data }}
+    </span>
   </marquee>
 </div>

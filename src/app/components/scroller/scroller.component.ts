@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { announcements } from '../constants/announcements';
 
 @Component({
   selector: 'app-scroller',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scroller.component.css'],
 })
 export class ScrollerComponent implements OnInit {
+  announcements: string[] = announcements;
   constructor() {}
 
   ngOnInit(): void {}

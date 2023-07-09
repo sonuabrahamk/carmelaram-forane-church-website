@@ -31,6 +31,8 @@ import { EventContentComponent } from './components/events-page/event-content/ev
 import { AssociationComponent } from './components/gallery-components/association/association.component';
 import { PhotosComponent } from './components/gallery-components/photos/photos.component';
 import { FlosCarmeliActionsComponent } from './components/flos-carmeli-actions/flos-carmeli-actions.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './services/email.service';
 
 @NgModule({
   declarations: [
@@ -68,8 +70,9 @@ import { FlosCarmeliActionsComponent } from './components/flos-carmeli-actions/f
     BrowserAnimationsModule,
     FormsModule,
     AgGridModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

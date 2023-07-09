@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enquiry.component.css'],
 })
 export class EnquiryComponent implements OnInit {
+  private url = 'https://mailthis.to/carmelaramforanechurch';
   firstName: string | any;
   emailId: string | any;
   contactNo: number | any;
   category: string | null = null;
   comment: string | any;
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {}
 
@@ -24,7 +26,10 @@ export class EnquiryComponent implements OnInit {
       category: this.category,
       message: this.comment,
     };
-    alert('Thankyou! We will get back to you soon!');
+
+    this.http.post(this.url, payload).subscribe((data) => {
+      alert(data);
+    });
     window.location.reload();
   }
 }

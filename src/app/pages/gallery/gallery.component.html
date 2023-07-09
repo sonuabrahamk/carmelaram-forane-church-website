@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-lg-2" *ngFor="let gallery of galleryData">
       <div class="card">
-        <a href="/gallery/{{ gallery.associationName }}">
+        <a [routerLink]="['/gallery/' + gallery.associationName]">
           <img
             class="card-img-top img-fluid"
             src="../../../assets/img/{{ gallery.logo }}"
