@@ -10,17 +10,17 @@ export class ParishComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  readText: string = 'More';
+  readText: string = 'Read More';
   readIcon: string = 'down';
 
   readBtnClick(): void {
-    if (this.readText === 'More') {
+    if (this.readText === 'Read More') {
       document.getElementById('contentSection')?.classList.add('readMore');
-      this.readText = 'Less';
+      this.readText = 'Read Less';
       this.readIcon = 'up';
     } else {
       document.getElementById('contentSection')?.classList.remove('readMore');
-      this.readText = 'More';
+      this.readText = 'Read More';
       this.readIcon = 'down';
     }
   }
