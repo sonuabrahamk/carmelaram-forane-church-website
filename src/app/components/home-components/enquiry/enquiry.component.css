@@ -23,16 +23,15 @@
 .btn.disabled,
 .btn:disabled,
 fieldset:disabled .btn{
-    border-color: #6c757d;
-    color: #6c757d;
+    border-color: #eb661f;
+    color: #fff;
+    background-color: #eb661f;
 }
 
-.btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active{
+.btn-send{
     background-color: #eb661f;
+    color: #fff;
+    border-color: #eb661f;
 }
 
 input.ng-touched.ng-invalid,
