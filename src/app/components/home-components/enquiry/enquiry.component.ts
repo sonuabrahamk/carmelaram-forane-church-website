@@ -19,11 +19,24 @@ export class EnquiryComponent implements OnInit {
   ngOnInit(): void {}
 
   submitForm(): void {
+    let toEmail: string;
+    if (this.category === 'Office') {
+      toEmail = 'info@carmelaramforanechurch.com';
+    } else if (this.category === 'Catechism') {
+      toEmail = 'info@carmelaramforanechurch.com';
+    } else if (this.category === 'Carmel Mercy Home') {
+      toEmail = 'info@carmelaramforanechurch.com';
+    } else if (this.category === 'Parish Hall') {
+      toEmail = 'info@carmelaramforanechurch.com';
+    } else {
+      toEmail = 'info@carmelaramforanechurch.com';
+    }
+
     const payload = {
       firstName: this.firstName,
       emailId: this.emailId,
       contactNo: this.contactNo,
-      category: this.category,
+      category: toEmail,
       message: this.comment,
     };
 

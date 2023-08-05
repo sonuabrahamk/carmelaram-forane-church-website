@@ -37,12 +37,12 @@ if(strlen($json_params) > 1) {
 
         //Recipients
         $mail->setFrom('info@carmelaramforanechurch.com', 'Mount Carmel Forane Church');
-        $mail->addAddress('info@carmelaramforanechurch.com', 'Mount Carmel Forane Church');     //Add a recipient
+        $mail->addAddress($decoded_params->category);     //Add a recipient
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'New Contact Information from the Website';
-        $mail->Body    = '<p>Hi Team!<br/><br/>We have a new enquiry request from website. Below is the details:<br/><br/>Name: <b>'.$decoded_params->firstName.'</b><br/>Email ID: <b>'.$decoded_params->emailId.'</b><br/>Contact No: <b>'.$decoded_params->contactNo.'</b><br/>Message:<br/><b>'.$decoded_params->message.'</b><br/><br/>Please do the needful.<br/><br/> Thanks,<br/>Bhavya Builders Website</p>';
+        $mail->Body    = '<p>Hi Team!<br/><br/>We have a new enquiry request from website. Below is the details:<br/><br/>Name: <b>'.$decoded_params->firstName.'</b><br/>Email ID: <b>'.$decoded_params->emailId.'</b><br/>Contact No: <b>'.$decoded_params->contactNo.'</b><br/>Message:<br/><b>'.$decoded_params->message.'</b><br/><br/>Please do the needful.<br/><br/> Thanks!</p>';
 
         $mail->send();
         $response = array("message"=>"Message has been sent successfully");
