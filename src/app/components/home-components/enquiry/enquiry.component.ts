@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enquiry.component.css'],
 })
 export class EnquiryComponent implements OnInit {
-  private url = 'https://mailthis.to/carmelaramforanechurch';
+  private url = '../../../../../snippets/emailer.php';
   firstName: string | any;
   emailId: string | any;
   contactNo: number | any;
