@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enquiry.component.css'],
 })
 export class EnquiryComponent implements OnInit {
-  private url = '../../../../../snippets/emailer.php';
+  private url = 'https://carmelaramforanechurch.com/snippets/emailer.php';
   firstName: string | any;
   emailId: string | any;
   contactNo: number | any;
@@ -30,6 +30,5 @@ export class EnquiryComponent implements OnInit {
     this.http.post(this.url, payload).subscribe((data) => {
       alert(data);
     });
-    window.location.reload();
   }
 }
