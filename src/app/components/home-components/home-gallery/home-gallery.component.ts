@@ -11,7 +11,7 @@ import { galleryData } from '../../constants/gallery-data';
 export class HomeGalleryComponent implements OnInit {
   galleryData: IGallery[] = galleryData;
   thumbnails: string[] = [];
-  associations: string[] =[];
+  associations: string[] = [];
 
   constructor() {}
 
@@ -20,7 +20,7 @@ export class HomeGalleryComponent implements OnInit {
       for (let album of assoc.albums) {
         if (album.thumbnailUrl !== '') {
           this.thumbnails.push(album.thumbnailUrl);
-          this.associations.push(assoc.associationName);
+          this.associations.push(album.name);
         }
       }
     }

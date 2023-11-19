@@ -1,15 +1,23 @@
 <h3><i class="fa-solid fa-ribbon"></i> Gallery</h3>
 <div class="row">
   <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let thumbnail of this.thumbnails">
+    <ng-template
+      carouselSlide
+      *ngFor="let thumbnail of this.thumbnails; let i = index"
+    >
       <div class="card">
-        <div class="cardbg" style="background: url('../../../../assets/img/gallery/{{ thumbnail }}')"></div>
+        <div
+          class="cardbg"
+          style="background: url('../../../../assets/img/gallery/{{
+            thumbnail
+          }}')"
+        ></div>
         <img
           class="card-img-top"
           src="../../../../assets/img/gallery/{{ thumbnail }}"
           alt="Title"
         />
-        <div class="caption">Album name</div>
+        <div class="caption">{{ this.associations[i] }}</div>
       </div>
     </ng-template>
   </owl-carousel-o>
