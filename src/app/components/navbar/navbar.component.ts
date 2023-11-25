@@ -17,4 +17,6 @@ export class NavbarComponent implements OnInit {
       .getElementById('footer')
       ?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
+
+  kalotsavamClick(): void {}
 }

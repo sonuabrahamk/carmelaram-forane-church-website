@@ -1,6 +1,7 @@
 .card{
     background-color: #ebba16;
     padding: 7px;
+    min-height: 350px;
 }
 
 .card-header {
@@ -18,7 +19,8 @@
 }
 
 .card-body .card-title {
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .card-body .card-text {

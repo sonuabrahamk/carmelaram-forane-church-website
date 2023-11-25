@@ -12,9 +12,10 @@
     text-transform: uppercase;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-nav .nav-link{
     color: #ebba16;
     font-weight: 500;
+    font-size: 15px;
     transition: all ease-in .3s;
     /* padding-right: 25px;; */
 }
