@@ -18,5 +18,7 @@ export class NavbarComponent implements OnInit {
       ?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
 
-  kalotsavamClick(): void {}
+  kalotsavamClick(): void {
+    window.location.href = 'https://kalotsavam.cbcmandya.com';
+  }
 }
