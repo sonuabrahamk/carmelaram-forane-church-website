@@ -5,7 +5,7 @@
   </h3>
   <h4>{{ this.albumId }} Photos</h4>
   <div class="row">
-    <div class="col-lg-2" *ngFor="let data of this.imagesData; let i = index">
+    <div class="col-lg-3" *ngFor="let data of this.imagesData; let i = index">
       <div class="card" (click)="galleryView(i)">
         <img
           class="card-img-top img-fluid"
@@ -28,13 +28,17 @@
   </div>
   <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide *ngFor="let data of this.imagesData" [id]="data">
-      <img
-        src="../../../../assets/img/gallery/{{ this.associationID }}/{{
-          this.albumId
-        }}/{{ data }}"
-        alt="BG Image"
-        class="img-fluid galleryImg"
-      />
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <img
+            src="../../../../assets/img/gallery/{{ this.associationID }}/{{
+              this.albumId
+            }}/{{ data }}"
+            alt="BG Image"
+            class="img-fluid galleryImg text-center"
+          />
+        </div>
+      </div>
     </ng-template>
   </owl-carousel-o>
 </div>

@@ -8,7 +8,8 @@ h3 {
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 a {
@@ -27,7 +28,6 @@ a {
 .card-img-top {
     padding: 20px;
     height: 150px;
-    width: 150px;
     margin: 0 auto;
     transition: all ease-in-out .3s;
 }
