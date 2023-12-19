@@ -9,9 +9,15 @@
       <div class="card" (click)="galleryView(i)">
         <img
           class="card-img-top img-fluid"
-          src="../../../../assets/img/gallery/{{ this.associationID }}/{{
-            this.albumId
-          }}/{{ data }}"
+          [defaultImage]="'../../../../assets/img/spin.gif'"
+          [lazyLoad]="
+            '../../../../assets/img/gallery/' +
+            this.associationID +
+            '/' +
+            this.albumId +
+            '/' +
+            data
+          "
           alt="image cap"
         />
       </div>
@@ -31,9 +37,15 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <img
-            src="../../../../assets/img/gallery/{{ this.associationID }}/{{
-              this.albumId
-            }}/{{ data }}"
+            [defaultImage]="'../../../../assets/img/spin.gif'"
+            [lazyLoad]="
+              '../../../../assets/img/gallery/' +
+              this.associationID +
+              '/' +
+              this.albumId +
+              '/' +
+              data
+            "
             alt="BG Image"
             class="img-fluid galleryImg text-center"
           />

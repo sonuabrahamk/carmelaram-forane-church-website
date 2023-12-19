@@ -2,7 +2,8 @@
   <ng-template carouselSlide>
     <div class="slide">
       <img
-        src="../../../../assets/img/banners/Interior 2.jpg"
+        [defaultImage]="'../../../../assets/img/spin.gif'"
+        [lazyLoad]="'../../../../assets/img/banners/christmas_banner.jpeg'"
         alt="BG Image"
         class="img-fluid"
       />
@@ -11,7 +12,8 @@
   <ng-template carouselSlide>
     <div class="slide">
       <img
-        src="../../../../assets/img/banners/Right Side View.jpg"
+        [defaultImage]="'../../../../assets/img/spin.gif'"
+        [lazyLoad]="'../../../../assets/img/banners/Interior 2.jpg'"
         alt="BG Image"
         class="img-fluid"
       />
@@ -20,7 +22,8 @@
   <ng-template carouselSlide>
     <div class="slide">
       <img
-        src="../../../../assets/img/banners/Front View.jpg"
+        [defaultImage]="'../../../../assets/img/spin.gif'"
+        [lazyLoad]="'../../../../assets/img/banners/Right Side View.jpg'"
         alt="BG Image"
         class="img-fluid"
       />
@@ -29,7 +32,18 @@
   <ng-template carouselSlide>
     <div class="slide">
       <img
-        src="../../../../assets/img/banners/Back Painting.jpg"
+        [defaultImage]="'../../../../assets/img/spin.gif'"
+        [lazyLoad]="'../../../../assets/img/banners/Front View.jpg'"
+        alt="BG Image"
+        class="img-fluid"
+      />
+    </div>
+  </ng-template>
+  <ng-template carouselSlide>
+    <div class="slide">
+      <img
+        [defaultImage]="'../../../../assets/img/spin.gif'"
+        [lazyLoad]="'../../../../assets/img/banners/Back Painting.jpg'"
         alt="BG Image"
         class="img-fluid"
       />

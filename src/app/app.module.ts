@@ -33,6 +33,7 @@ import { PhotosComponent } from './components/gallery-components/photos/photos.c
 import { FlosCarmeliActionsComponent } from './components/flos-carmeli-actions/flos-carmeli-actions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './services/email.service';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { EmailService } from './services/email.service';
     FormsModule,
     AgGridModule,
     HttpClientModule,
+    LazyLoadImageModule,
   ],
   providers: [EmailService],
   bootstrap: [AppComponent],
