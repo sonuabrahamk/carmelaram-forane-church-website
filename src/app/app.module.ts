@@ -13,6 +13,7 @@ import { CarouselComponent } from './components/home-components/carousel/carouse
 import { UpcomingEventsComponent } from './components/home-components/upcoming-events/upcoming-events.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FlosCarmeliComponent } from './components/home-components/flos-carmeli/flos-carmeli.component';
+import { FlosCarmeliListComponent } from './pages/flos-carmeli/flos-carmeli.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ParishComponent } from './pages/parish/parish.component';
 import { DioceseComponent } from './pages/diocese/diocese.component';
@@ -46,6 +47,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     UpcomingEventsComponent,
     FooterComponent,
     FlosCarmeliComponent,
+    FlosCarmeliListComponent,
     ParishComponent,
     DioceseComponent,
     CarmelMercyHomeComponent,

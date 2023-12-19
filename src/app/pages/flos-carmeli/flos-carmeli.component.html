@@ -1,23 +1,27 @@
 <div class="container">
   <div class="events-container">
-    <h3>Announcements on 30-07-2023</h3>
-    <ul>
-      <li>
-        Blood Donation Camp and Free Heart Checkup to be held on Sunday, 6th
-        August , from 8:30am to 1pm at Avila Bhavan.
-      </li>
-      <li>
-        Aradhana to be held on Sunday, 6th August at 8.30am led by Mathruvedhi
-      </li>
-      <li>
-        St. Vincent De Paul Association - Carmelaram Unit has received
-        International Accredetation.
-      </li>
-      <li>Required: Parish Office Assistant, Contact Parish Office</li>
-      <li>
-        Swaralaya Music Academy classes are starting on 01 August, Contact Fr.
-        Biju (8762942340)
-      </li>
-    </ul>
+    <h3>
+      Flos Carmeli
+      <!-- Button to clear selection -->
+      <input
+        type="text"
+        class="searchBtn"
+        (input)="onSearchChange($event)"
+        placeholder="Search"
+      />
+    </h3>
+
+    <!-- AG Grid Angular Component -->
+    <ag-grid-angular
+      style="width: 100%; display: flex; flex-direction: column; flex: 1"
+      domLayout="autoHeight"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [animateRows]="true"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+    <br /><br />
   </div>
 </div>

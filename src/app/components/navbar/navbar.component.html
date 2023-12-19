@@ -80,18 +80,17 @@
           <i class="fa-solid fa-circle"></i>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="cursor: pointer" (click)="contactClick()">
-            Contact
-          </a>
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="['flos-carmeli']"
+            >Flos Carmeli</a
+          >
           <i class="fa-solid fa-circle"></i>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            style="cursor: pointer"
-            [href]="['https://www.kalotsavam.cbcmandya.com']"
-          >
-            Kalotsavam-2023
+          <a class="nav-link" style="cursor: pointer" (click)="contactClick()">
+            Contact
           </a>
         </li>
         <!-- <li class="nav-item dropdown" ngbDropdown>

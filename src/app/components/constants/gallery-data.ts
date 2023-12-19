@@ -41,6 +41,20 @@ export const galleryData: IGallery[] = [
         thumbnailUrl: '/Mount Carmel Youth/Oath Taking Ceremony/IMG_2.jpg',
         images: ['IMG_1.jpg', 'IMG_2.jpg', 'IMG_3.jpeg'],
       },
+      {
+        name: 'Gloria 2023',
+        date: new Date('2023-12-10'),
+        thumbnailUrl: '/Mount Carmel Youth/Gloria 2023/img1.jpg',
+        images: [
+          'img1.jpg',
+          'img2.jpg',
+          'img3.jpg',
+          'img4.jpg',
+          'img5.jpg',
+          'img6.jpg',
+          'img7.jpg',
+        ],
+      },
     ],
   },
   {
