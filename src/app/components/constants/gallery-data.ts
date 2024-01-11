@@ -23,6 +23,12 @@ export const galleryData: IGallery[] = [
         thumbnailUrl: '/parish/Ezuthiniruthaal May 2023/img1.jpg',
         images: ['img1.jpg'],
       },
+      {
+        name: 'Annual Feast - 2024',
+        date: new Date('2023-05-28'),
+        thumbnailUrl: '/parish/Annual Feast - 2024/img1.jpg',
+        images: ['img1.jpg'],
+      },
     ],
   },
   {
@@ -72,6 +78,30 @@ export const galleryData: IGallery[] = [
         date: new Date('2022-06-01'),
         thumbnailUrl: '/catechism/Moments/img1.jpg',
         images: ['img1.jpg', 'img2.jpg', 'img3.jpg'],
+      },
+      {
+        name: 'Christmas Tree',
+        date: new Date('2023-12-25'),
+        thumbnailUrl: '/catechism/Christmas Tree/img1.jpeg',
+        images: ['img1.jpeg'],
+      },
+    ],
+  },
+  {
+    associationName: 'mathruvedhi',
+    logo: 'logo.png',
+    albums: [
+      {
+        name: 'Gabriella',
+        date: new Date('2023-12-17'),
+        thumbnailUrl: '/mathruvedhi/Gabriella/img1.jpeg',
+        images: ['img1.jpeg'],
+      },
+      {
+        name: 'Visiting Aged Mothers',
+        date: new Date('2023-12-17'),
+        thumbnailUrl: '/mathruvedhi/Visiting Aged Mothers/img1.jpeg',
+        images: ['img1.jpeg'],
       },
     ],
   },
