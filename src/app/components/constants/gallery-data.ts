@@ -27,7 +27,7 @@ export const galleryData: IGallery[] = [
         name: 'Annual Feast - 2024',
         date: new Date('2023-05-28'),
         thumbnailUrl: '/parish/Annual Feast - 2024/img1.jpg',
-        images: ['img1.jpg'],
+        images: ['img1.jpg', 'img2.jpg'],
       },
     ],
   },
