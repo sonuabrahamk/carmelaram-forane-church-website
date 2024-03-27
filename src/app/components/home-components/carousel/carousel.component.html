@@ -1,23 +1,14 @@
-<owl-carousel-o [options]="customOptions">
-  <ng-template carouselSlide>
+<owl-carousel-o [options]="customOptions" class="mainCarousel">
+  <ng-template carouselSlide id="owl-slide-1" dataHash="one">
     <div class="slide">
       <img
-        [lazyLoad]="'../../../../assets/img/banners/holy_week.jpg'"
+        [lazyLoad]="'../../../../assets/img/banners/Hly_Week_Sch4.jpg'"
         alt="BG Image"
         class="img-fluid"
       />
     </div>
   </ng-template>
-  <ng-template carouselSlide>
-    <div class="slide">
-      <img
-        [lazyLoad]="'../../../../assets/img/banners/celebrate.jpg'"
-        alt="BG Image"
-        class="img-fluid"
-      />
-    </div>
-  </ng-template>
-  <ng-template carouselSlide>
+  <ng-template carouselSlide id="owl-slide-2" dataHash="two">
     <div class="slide">
       <img
         [lazyLoad]="'../../../../assets/img/banners/Right Side View.jpg'"
@@ -26,7 +17,7 @@
       />
     </div>
   </ng-template>
-  <ng-template carouselSlide>
+  <ng-template carouselSlide id="owl-slide-3" dataHash="three">
     <div class="slide">
       <img
         [lazyLoad]="'../../../../assets/img/banners/Front View.jpg'"
@@ -35,7 +26,7 @@
       />
     </div>
   </ng-template>
-  <ng-template carouselSlide>
+  <!-- <ng-template carouselSlide>
     <div class="slide">
       <img
         [lazyLoad]="'../../../../assets/img/banners/Back Painting.jpg'"
@@ -43,5 +34,5 @@
         class="img-fluid"
       />
     </div>
-  </ng-template>
+  </ng-template> -->
 </owl-carousel-o>

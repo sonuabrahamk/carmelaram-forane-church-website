@@ -13,12 +13,13 @@ export class CarouselComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    dots: false,
-    navSpeed: 200,
+    dots: true,
+    navSpeed: 5000,
     autoplay: true,
     pullDrag: true,
     mouseDrag: true,
     touchDrag: true,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
