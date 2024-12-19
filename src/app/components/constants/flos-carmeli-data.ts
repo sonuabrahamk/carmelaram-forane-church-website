@@ -136,4 +136,13 @@ export const flosCarmeliData: IFlosCarmeli[] = [
     file: 'aug_2024.pdf',
     name: 'August 2024 - Edition',
   },
+  {
+    id: 16,
+    image: 'jan.jpg',
+    volume: 6,
+    issue: 8,
+    date: new Date(2024, 7),
+    file: 'sep_2024.pdf',
+    name: 'September 2024 - Edition',
+  },
 ];

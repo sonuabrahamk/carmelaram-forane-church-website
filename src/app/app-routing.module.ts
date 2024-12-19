@@ -15,7 +15,7 @@ import { FlosCarmeliListComponent } from './pages/flos-carmeli/flos-carmeli.comp
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   { path: 'home', component: HomeComponent },
@@ -28,6 +28,9 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'gallery/:association', component: AssociationComponent },
   { path: 'gallery/:association/:album', component: PhotosComponent },
+
+  // Catch-all wildcard route for undefined routes
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
