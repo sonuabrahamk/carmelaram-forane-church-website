@@ -111,6 +111,17 @@ export const galleryData: IGallery[] = [
           'img8.jpg',
         ],
       },
+      {
+        name: 'Gloria 2024',
+        date: new Date('2024-12-04'),
+        thumbnailUrl: '/Mount Carmel Youth/Gloria 2024/img1.jpg',
+        images: [
+          'img1.jpg',
+          'img2.jpg',
+          'img3.jpg',
+          'img4.jpg',
+        ],
+      },
     ],
   },
   {
