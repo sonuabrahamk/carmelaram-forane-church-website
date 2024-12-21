@@ -2,3 +2,8 @@
     position: relative;
     overflow: hidden;
 }
+
+.background-home {
+    background: url("../../../assets/img/christmas_bg_gif.gif");
+    background-size: cover;
+}

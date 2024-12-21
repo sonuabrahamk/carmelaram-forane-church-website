@@ -1,99 +1,53 @@
 <div class="header" id="header">
-  <div class="container">
+  <div class="container" style="background: none;">
     <a class="navbar-brand" [routerLink]="['/home']">
-      <img
-        src="../../../assets/img/header/HH2.png"
-        alt="Logo"
-        class="img-fluid logo-img"
-      />
+      <img src="../../../assets/img/header/HH2.png" alt="Logo" class="img-fluid logo-img" />
     </a>
   </div>
-</div>
-<nav
-  class="navbar sticky-top navbar-expand-lg bg-light justify-content-between"
->
-  <div class="container">
-    <button
-      class="navbar-toggler d-lg-none float-end"
-      type="button"
-      (click)="isNavbarCollapsed = !isNavbarCollapsed"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      [ngbCollapse]="isNavbarCollapsed"
-      class="collapse navbar-collapse"
-      id="collapsibleNavId"
-    >
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="'active'"
-            [routerLink]="['home']"
-            aria-current="page"
-          >
-            Home
-          </a>
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="['active']"
-            [routerLink]="['diocese']"
-          >
-            Diocese
-          </a>
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="['active']"
-            [routerLink]="['parish']"
-            >Parish</a
-          >
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="['active']"
-            [routerLink]="['carmel-mercy-home']"
-            >Carmel Mercy Home</a
-          >
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="['active']"
-            [routerLink]="['gallery']"
-            >Gallery</a
-          >
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLinkActive]="['active']"
-            [routerLink]="['flos-carmeli']"
-            >Flos Carmeli</a
-          >
-          <i class="fa-solid fa-circle"></i>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="cursor: pointer" (click)="contactClick()">
-            Contact
-          </a>
-        </li>
-        <!-- <li class="nav-item dropdown" ngbDropdown>
+  <nav class="navbar sticky-top navbar-expand-lg bg-light justify-content-between" style="background: none!important; padding: 0">
+    <div class="container" style="padding: 0.5em 0;">
+      <button class="navbar-toggler d-lg-none float-end" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+        data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="'active'" [routerLink]="['home']" aria-current="page">
+              Home
+            </a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['diocese']">
+              Diocese
+            </a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['parish']">Parish</a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['carmel-mercy-home']">Carmel Mercy
+              Home</a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['gallery']">Gallery</a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['flos-carmeli']">Flos Carmeli</a>
+            <i class="fa-solid fa-circle"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer" (click)="contactClick()">
+              Contact
+            </a>
+          </li>
+          <!-- <li class="nav-item dropdown" ngbDropdown>
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -112,7 +66,8 @@
             <a class="dropdown-item" ngbDropdownItem href="#">Action 2</a>
           </div>
         </li> -->
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

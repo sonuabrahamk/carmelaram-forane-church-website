@@ -13,7 +13,14 @@
 }
 
 .container-fluid {
+    background: none;
     display: block!important;
+}
+
+.container {
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .btn-outline-primary {
