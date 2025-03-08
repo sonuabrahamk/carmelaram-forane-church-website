@@ -1,0 +1,110 @@
+<h3><i class="fa-solid fa-ribbon"></i> Enquiry</h3>
+<div class="row">
+  <form #contactForm="ngForm" (ngSubmit)="submitForm()">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-person"></i>
+      </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="First Name"
+        aria-label="First Name"
+        aria-describedby="basic-addon1"
+        name="firstName"
+        [(ngModel)]="firstName"
+        #firstNameInput="ngModel"
+        required
+      />
+    </div>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </span>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Email ID"
+        aria-label="Email ID"
+        aria-describedby="basic-addon1"
+        name="emailId"
+        [(ngModel)]="emailId"
+        #emailIdInput="ngModel"
+        required
+        email
+      />
+    </div>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-solid fa-phone"></i>
+      </span>
+      <input
+        type="tel"
+        class="form-control"
+        placeholder="Contact no"
+        aria-label="Contact no"
+        aria-describedby="basic-addon1"
+        name="contactNo"
+        [(ngModel)]="contactNo"
+        #contactNoInput="ngModel"
+        required
+        [valueAsNumber]
+      />
+    </div>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">
+        <i class="fa-sharp fa-solid fa-quote-right"></i>
+      </span>
+      <select
+        class="form-control"
+        placeholder="Category"
+        aria-label="Category"
+        aria-describedby="basic-addon1"
+        name="category"
+        [(ngModel)]="category"
+        #categoryInput="ngModel"
+        required
+      >
+        <option [ngValue]="null" [disabled]="true">Select Category</option>
+        <option>Office</option>
+        <option>Catechism</option>
+        <option>Carmel Mercy Home</option>
+        <option>Parish Hall</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-message"></i>
+      </span>
+      <textarea
+        class="form-control"
+        aria-label="With textarea"
+        placeholder="Your comment here"
+        name="comment"
+        [(ngModel)]="comment"
+        #commentInput="ngModel"
+        required
+      ></textarea>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 offset-lg-6">
+        <div class="input-group">
+          <button class="btn btn-outline-secondary" type="button">
+            Cancel
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="input-group">
+          <button
+            type="submit"
+            class="btn btn-outline-primary btn-send"
+            [disabled]="!contactForm.valid"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

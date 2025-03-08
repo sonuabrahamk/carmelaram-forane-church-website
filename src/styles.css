@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/ag-grid-community/styles/ag-grid.css';
+@import '../node_modules/ag-grid-community/styles/ag-theme-alpine.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-light{
+    background-color: #fff!important;
+}
+
+.container-fluid {
+    background: none;
+    display: block!important;
+}
+
+.btn-outline-primary {
+    color: #ebba16;
+    border-color: #ebba16;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ebba16;
+    color: #fff;
+    border-color: #ebba16;
+}
+
+h3 {
+    font-size: 22px !important;
+    font-family: 'Poppins', sans-serif;
+    color: #eb661f;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-bottom: 1px solid #eb661f;
+}
+
+h3 i{
+    color: #ebba16;
+    margin-right: 10px;
+    /* -webkit-text-stroke: 1px #000; */
+}
+
+h3 button {
+    float: right;
+    font-size: 12px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.owl-theme .owl-nav {
+    float: right !important;
+    border-top: 1px solid #ccc;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: #fff;
+    border: 1px solid #ebba16;
+    color: #ebba16;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #ebba16;
+    color: #fff;
+}

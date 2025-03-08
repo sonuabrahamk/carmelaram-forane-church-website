@@ -1,0 +1,8 @@
+<div class="scroller">
+  <a [routerLink]="['/announcements']">Announcements</a>
+  <marquee>
+    <span *ngFor="let data of this.announcements">
+      <i class="fa-solid fa-bullhorn"></i> {{ data }}
+    </span>
+  </marquee>
+</div>

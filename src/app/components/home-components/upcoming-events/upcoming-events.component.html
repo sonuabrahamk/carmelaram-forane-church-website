@@ -1,0 +1,22 @@
+<h3>
+  <i class="fa-solid fa-ribbon"></i> Upcoming Events
+  <a [routerLink]="['/upcoming-events']">
+    <button type="button" class="btn btn-outline-primary">View All</button>
+  </a>
+</h3>
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide *ngFor="let event of eventsData">
+    <div class="row">
+      <div class="col-sm-3">
+        <app-date-element [data]="event.date"></app-date-element>
+      </div>
+      <div class="col-sm-9">
+        <h5>{{ event.title }}</h5>
+        <p>{{ event.content }}</p>
+        <!-- <button type="button" class="btn btn-outline-primary read-more">
+          Read More
+        </button> -->
+      </div>
+    </div>
+  </ng-template>
+</owl-carousel-o>

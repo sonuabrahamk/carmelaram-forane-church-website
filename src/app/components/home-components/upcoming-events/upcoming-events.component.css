@@ -1,0 +1,21 @@
+.events .row{
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.events p {
+    height: 3.5rem;
+    overflow:hidden;
+    margin-bottom: 2px;
+}
+
+.read-more{
+    padding: 3px;
+    float: right;
+    font-size: 12px;
+}
+
+.owl-theme .owl-nav{
+    float: right !important;
+    border-bottom: 1px solid #ccc;
+}

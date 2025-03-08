@@ -1,0 +1,25 @@
+<h3><i class="fa-solid fa-ribbon"></i> Gallery</h3>
+<div class="row">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template
+      carouselSlide
+      *ngFor="let thumbnail of this.thumbnails; let i = index"
+    >
+      <div class="card">
+        <div
+          class="cardbg"
+          style="background: url('../../../../assets/img/gallery/{{
+            thumbnail
+          }}')"
+        ></div>
+        <img
+          class="card-img-top"
+          [defaultImage]="'../../../../assets/img/spin.gif'"
+          [lazyLoad]="'../../../../assets/img/gallery/' + thumbnail"
+          alt="Title"
+        />
+        <div class="caption">{{ this.associations[i] }}</div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>

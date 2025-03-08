@@ -1,0 +1,44 @@
+.events-container {
+    font-family: 'Poppins', sans-serif;
+    min-height: 50vh;
+}
+
+.events-container h3 {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.events-container ul {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.events-container ul li{
+    margin: 20px 0;
+}
+
+.searchBtn {
+    border: 1px solid #e5b615;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchBtn:focus {
+    outline-color: #e5b615;
+}
+
+.ag-theme-alpine {
+    --ag-header-height: 30px;
+    /* --ag-header-foreground-color: none;
+    --ag-header-background-color: none;
+    --ag-borders: none;
+    --ag-row-border-style: none;
+    --ag-row-hover-color: none;
+    --ag-odd-row-background-color: none;
+    --ag-alpine-active-color: #fff; */
+}

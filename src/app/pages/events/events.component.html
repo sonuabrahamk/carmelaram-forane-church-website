@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="events-container">
+    <h3>
+      Events
+      <!-- Button to clear selection -->
+      <input
+        type="text"
+        class="searchBtn"
+        (input)="onSearchChange($event)"
+        placeholder="Search"
+      />
+    </h3>
+
+    <!-- AG Grid Angular Component -->
+    <ag-grid-angular
+      style="width: 100%; display: flex; flex-direction: column; flex: 1"
+      domLayout="autoHeight"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [animateRows]="true"
+      [headerHeight]="0"
+      [rowHeight]="75"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+  </div>
+</div>

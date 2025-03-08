@@ -1,0 +1,52 @@
+.container {
+    min-height: 50vh;
+}
+
+h3 {
+    border: none;
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.card {
+    margin: 20px 0;
+    padding: 10px;
+    padding-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-img-top {
+    padding: 20px;
+    height: 150px;
+    margin: 0 auto;
+    transition: all ease-in-out .3s;
+}
+
+.card-body {
+    padding: 0;
+    border-top: 1px solid #ebba16;
+    padding-top: 10px;
+}
+
+.card-title {
+    color: #eb661f;
+    text-transform: capitalize;
+}
+
+.card:hover {
+    background-color: #e7e7e7;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.2);
+}

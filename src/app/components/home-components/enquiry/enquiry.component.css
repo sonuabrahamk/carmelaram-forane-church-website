@@ -1,0 +1,40 @@
+.input-group{
+    margin-bottom: 10px;
+}
+
+.input-group-text{
+    min-width: 50px;
+    padding: 0 15px;
+    text-align: center;
+    color: #eb661f;
+}
+
+.form-control{
+    font-size: 14px;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #eb661f;
+
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn{
+    border-color: #eb661f;
+    color: #fff;
+    background-color: #eb661f;
+}
+
+.btn-send{
+    background-color: #eb661f;
+    color: #fff;
+    border-color: #eb661f;
+}
+
+input.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid {
+    border: 2px solid red;
+}

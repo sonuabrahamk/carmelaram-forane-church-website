@@ -1,0 +1,34 @@
+.scroller {
+    width: 100%;
+    background-color: #eb661f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0;
+    display: flex;
+}
+
+.scroller a {
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all ease-in-out .1s;
+}
+
+.scroller a:hover{
+    background-color: goldenrod;
+}
+
+.scroller marquee {
+    padding-top: 10px;
+}
+
+.scroller marquee i {
+    color: #ebba16;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}

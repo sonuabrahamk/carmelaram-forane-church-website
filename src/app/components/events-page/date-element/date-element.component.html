@@ -1,0 +1,9 @@
+<div class="date">
+  <div class="dd">{{ this.data?.getDate() }}</div>
+  <div class="mon">
+    {{ this.getMonthName(this.data?.getMonth()) }}
+  </div>
+  <div class="mon" style="padding-bottom: 15px">
+    {{ this.data?.getFullYear() }}
+  </div>
+</div>

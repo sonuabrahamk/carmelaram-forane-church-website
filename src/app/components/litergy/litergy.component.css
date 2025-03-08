@@ -1,0 +1,30 @@
+.litergy-section {
+    width: 94%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.litergy-section .content{
+    max-width: 30%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    text-align-last: left;
+    padding: 5px;
+    z-index: 2;
+}
+
+.litergy-section .content p{
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.litergy-section .content h5 {
+    text-transform: uppercase;
+    color: #eb661f;
+    font-size: 14px;
+    font-weight: bold;
+}

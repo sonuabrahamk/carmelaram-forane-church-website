@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="events-container">
+    <h3>
+      Flos Carmeli
+      <!-- Button to clear selection -->
+      <input
+        type="text"
+        class="searchBtn"
+        (input)="onSearchChange($event)"
+        placeholder="Search"
+      />
+    </h3>
+
+    <!-- AG Grid Angular Component -->
+    <ag-grid-angular
+      style="width: 100%; display: flex; flex-direction: column; flex: 1"
+      domLayout="autoHeight"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [animateRows]="true"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+    <br /><br />
+  </div>
+</div>
