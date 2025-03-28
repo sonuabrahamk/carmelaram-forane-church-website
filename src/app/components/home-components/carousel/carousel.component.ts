@@ -14,7 +14,7 @@ export class CarouselComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     dots: true,
-    navSpeed: 5000,
+    navSpeed: 9000,
     autoplay: true,
     pullDrag: true,
     mouseDrag: true,
